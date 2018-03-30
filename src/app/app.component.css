@@ -7,3 +7,15 @@
   height: 18px;
   line-height: 18px;
 }
+
+#header {
+  border-bottom: 1px solid #5f99cf;
+  position: relative;
+  background-color: #cee3f8;
+  z-index: 99;
+}
+
+.dropdown {
+  float: left;
+  padding-left: 5px;
+}
