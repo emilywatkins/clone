@@ -1,0 +1,16 @@
+<h2>New Post</h2>
+<div>
+  <label>Enter Post Title</label>
+  <input #newTitle>
+</div>
+<div>
+  <label>Enter Post Body</label>
+  <input #newBody>
+</div>
+<div>
+  <label>Enter Post Image Url</label>
+  <input #newImage>
+</div>
+<div>
+  <button (click)="submitForm(newTitle.value, newBody.value, newImage.value); newTitle.value=''; newBody.value=''; newImage.value='';">Submit</button>
+</div>
