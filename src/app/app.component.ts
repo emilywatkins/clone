@@ -16,4 +16,8 @@ export class AppComponent {
   addPost(newPost: Post) {
     this.masterPostList.push(newPost);
   }
+
+  upvote(clickedPost) {
+    clickedPost.points += 1;
+  }
 }
