@@ -20,4 +20,8 @@ export class AppComponent {
   upvote(clickedPost) {
     clickedPost.points += 1;
   }
+
+  downvote(clickedPost) {
+    clickedPost.points -= 1;
+  }
 }

@@ -9,10 +9,14 @@ import { Post } from '../models/post.model';
 export class PostListComponent implements OnInit {
   @Input() childPostList: Post[];
   @Output() clickedUp = new EventEmitter;
-  @Output() downvote = new EventEmitter;
+  @Output() clickedDown = new EventEmitter;
 
   upvoteButtonClicked(postToUpvote: Post) {
     this.clickedUp.emit(postToUpvote);
+  }
+
+  downvoteButtonClicked(postToDownvote: Post) {
+    this.clickedDown.emit(postToDownvote);
   }
 
   constructor() { }

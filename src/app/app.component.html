@@ -10,7 +10,7 @@
     </div>
   </div>
   <div id="content">
-    <app-post-list [childPostList]="masterPostList" (clickedUp)="upvote($event)"></app-post-list>
+    <app-post-list [childPostList]="masterPostList" (clickedUp)="upvote($event)" (clickedDown)="downvote($event)"></app-post-list>
   </div>
   <div id="side">
 
