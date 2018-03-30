@@ -1,9 +1,11 @@
 <div id="post" *ngFor="let currentPost of childPostList">
   <div class="row">
     <div class="col-1">
-      <p>up arrow</p>
+      <button (click)="upvoteClicked()">up</button>
+      <br>
       {{currentPost.points}}
-      <p>down arrow</p>
+      <br>
+      <button (click)="downvoteClicked()">down</button>
     </div>
     <div class="col">
       {{currentPost.title}} | {{currentPost.body}} | {{currentPost.image}}
