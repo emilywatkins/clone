@@ -13,4 +13,7 @@ export class AppComponent {
     new Post('Post2 Title', 'Post2 Body', 'Post2 image url')
   ];
 
+  addPost(newPost: Post) {
+    this.masterPostList.push(newPost);
+  }
 }
