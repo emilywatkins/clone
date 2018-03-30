@@ -1,3 +1,14 @@
-<ul>
+<!-- <ul>
   <li *ngFor="let currentPost of childPostList">{{currentPost.title}} | {{currentPost.body}} | {{currentPost.image}}</li>
-</ul>
+</ul> -->
+
+<div id="post" *ngFor="let currentPost of childPostList">
+  <div class="row">
+    <div class="col-1">
+      <p>upvotes and downvotes will go here.</p>
+    </div>
+    <div class="col">
+      {{currentPost.title}} | {{currentPost.body}} | {{currentPost.image}}
+    </div>
+  </div>
+</div>
