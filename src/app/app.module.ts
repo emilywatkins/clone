@@ -3,11 +3,16 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TabMenuComponent } from './tab-menu/tab-menu.component';
+
+import { ListPostComponent } from './list-post/list-post.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TabMenuComponent,
+    ListPostComponent
   ],
   imports: [
     BrowserModule
